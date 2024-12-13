@@ -2,7 +2,7 @@
 body {
     height: 100%; 
     margin: 0; 
-   background-image: url('concrete-background.jpg');
+   background-image: url('/css/concrete-background.jpg');
    background-size: cover;
    background-size: 100%;
   }
