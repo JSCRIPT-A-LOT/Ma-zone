@@ -9,31 +9,7 @@
 </head>
 <body class="d-flex justify-content-center align-items-center vh-100 text-body-tertiary">
   <div class="container">
-    <nav id="nav" class="navbar fixed-top bg-dark">
-      <div class="container-fluid">
-        <ul class="navbar-nav d-flex flex-row w-100">
-          <li class="nav-item">
-            <a id="home" class="nav-link link-light active fs-2 mx-1" aria-current="Home" target="_self" href="/">Home</a>
-          </li>
-          <div class="ms-auto d-flex mt-2">
-            <li><button type="button" class="btn btn-dark ms-3" id="liveToastBtn">Weather</button></li>
-            <li><button id="joke" class="btn btn-dark ms-1" type="button" data-bs-toggle="collapse" data-bs-target="#newJoke" aria-expanded="false" aria-controls="newJoke">Random Joke</button></li>
-            <li class="nav-item ps-3">
-              <a class="nav-link link-light" target="_self" href="files">Files</a>
-            </li>
-            <li class="nav-item ps-3">
-              <a class="nav-link link-light" target="_self" href="media">Media</a>
-            </li>
-            <li class="nav-item ps-3">
-              <a class="nav-link link-light" target="_self" href="rand">Rand</a>
-            </li>
-            <li>
-              <button id="toggle-planner" class="btn btn-dark ms-3">Planner</button>
-            </li>
-          </div>
-        </ul>
-      </div>
-    </nav>
+    <%- include('partials/nav'); %>
     <div class="collapse" id="newJoke">
       <div id="jokeContainer" class="card card-body bg-dark text-white">
       </div></div>
