@@ -19,10 +19,6 @@ app.get('/files',(req,res)=>{
   res.render('files')
 })
 
-app.get('/rand',(req,res)=>{
-  res.render('rand')
-  
-})
 app.listen(port,()=>{
   console.log('listening')
 })

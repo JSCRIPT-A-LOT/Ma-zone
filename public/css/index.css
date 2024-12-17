@@ -3,7 +3,7 @@ body {
     height: 100%; 
     margin: 0; 
    background-image: url('/css/concrete-background.jpg');
-   background-size: cover;
+   background-size:contain;
    background-size: 100%;
   }
   #zone{

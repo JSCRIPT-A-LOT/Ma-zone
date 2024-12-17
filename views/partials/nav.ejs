@@ -1,25 +1,42 @@
-<nav id="nav" class="navbar fixed-top bg-dark">
-    <div class="container-fluid">
-      <ul class="navbar-nav d-flex flex-row w-100">
-        <li class="nav-item">
+<nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="d-flex">
+ <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
           <a id="home" class="nav-link link-light active fs-2 mx-1" aria-current="Home" target="_self" href="/">Home</a>
-        </li>
-        <div class="ms-auto d-flex mt-2">
-          <li><button type="button" class="btn btn-dark ms-3" id="liveToastBtn">Weather</button></li>
-          <li><button id="joke" class="btn btn-dark ms-1" type="button" data-bs-toggle="collapse" data-bs-target="#newJoke" aria-expanded="false" aria-controls="newJoke">Random Joke</button></li>
-          <li class="nav-item ps-3">
-            <a class="nav-link link-light" target="_self" href="files">Files</a>
-          </li>
-          <li class="nav-item ps-3">
-            <a class="nav-link link-light" target="_self" href="media">Media</a>
-          </li>
-          <li class="nav-item ps-3">
-            <a class="nav-link link-light" target="_self" href="rand">Rand</a>
-          </li>
-          <li>
-            <button id="toggle-planner" class="btn btn-dark ms-3">Planner</button>
-          </li>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav d-flex flex-column">
+              <li class="nav-item ps-3">
+                <a class="nav-link link-light" target="_self" href="files">Files</a>
+              </li>
+              <li class="nav-item ps-3">
+                <a class="nav-link link-light" target="_self" href="media">Media</a>
+              </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Looking for?" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-dark dropdown-toggle fs-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+       Tools
+      </button>
+      <ul class="dropdown-menu dropdown-menu-dark">
+        <li>
+        <button id="toggle-planner" class="btn text-light ms-3">Planner</button>
+        </li>
+        <li><button type="button" class="btn text-light ms-3" id="liveToastBtn">Weather</button></li>
       </ul>
     </div>
+    <button id="joke" class="btn text-light fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#newJoke" aria-expanded="false" aria-controls="newJoke">Joke</button>
+  </div>
+  <a id="home" class="nav-link link-light active fw-bold fs-3 mx-1 flex-end" aria-current="Home" target="_self" href="/">Home</a>
   </nav>
