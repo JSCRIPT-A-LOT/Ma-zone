@@ -3,14 +3,15 @@ body {
     height: 100%; 
     margin: 0; 
    background-image: url('/css/concrete-background.jpg');
-   background-size:contain;
-   background-size: 100%;
   }
   #zone{
-    font-size: 10rem;
+    font-size: 20dvh;
     color: rgb(0, 0, 0);
+    word-wrap: break-word; /* Ensure text wraps properly */
+    overflow-wrap: break-word; /* Fallback for word breaking */
+    max-width: 80%; /* Ensure it doesn't overflow horizontally */
+    margin: 0 auto; /* Center the element */
   }
-
   #search {
     font-weight: 900;
   }
@@ -84,6 +85,17 @@ body {
  * animation text-pop-up-top
  * ----------------------------------------
  */
+ /* Default width for off-canvas */
+.custom-half-width {
+  width: 50%; /* Set width to 50% */
+}
+
+/* Target mobile devices with max width of 768px */
+@media (max-width: 768px) {
+  .custom-half-width {
+    width: 50% !important; /* Make it half-screen width */
+  }
+}
 @-webkit-keyframes text-pop-up-top {
   0% {
     -webkit-transform: translateY(0);
