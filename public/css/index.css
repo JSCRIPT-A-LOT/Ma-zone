@@ -3,6 +3,8 @@ body {
     height: 100%; 
     margin: 0; 
    background-image: url('/css/concrete-background.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
   }
   #zone{
     font-size: 20dvh;
